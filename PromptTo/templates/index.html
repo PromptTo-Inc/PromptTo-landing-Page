@@ -1,0 +1,899 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>PromptTo</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: OnePage
+  * Updated: Feb 21 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+  
+      <!-- Logo with PromptTo branding, consider using an image if it fits your branding better -->
+      <h1 class="logo"><a href="index.html"></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo"><img src="{% static 'assets/img/logo1.png' %}" alt="PromptTo Logo" class="img-fluid"></a>
+  
+      <!-- Navigation -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+          <li><a class="nav-link scrollto" href="#services">Our Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Our Work</a></li>
+          <li><a class="nav-link scrollto" href="#team">Our Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+          <!-- Simplifying the dropdown to focus on key areas -->
+          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+ <!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+      <div class="row justify-content-center">
+        <div class="col-xl-7 col-lg-9 text-center">
+          <h2>Innovating for a Smarter Tomorrow</h2>
+          <p>At the forefront of AI, Robotics, and Software Development</p>
+        </div>
+        <div class="col-12 text-center"> <!-- Centering Welcome Message -->
+          <h1>Welcome to PromptTo Inc.</h1>
+          <p class="mt-2">Accelerating Technological Advancements, Inspiring Global Innovation.</p>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="#about" class="btn-get-started scrollto">Discover More</a>
+      </div>
+  
+      <div class="row icon-boxes">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon"><i class="ri-robot-line"></i></div>
+            <h4 class="title"><a href="">Robotic Solutions</a></h4>
+            <p class="description">Empowering industries with cutting-edge robotic automation and intelligence</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="ri-brush-line"></i></div>
+            <h4 class="title"><a href="">Creative AI</a></h4>
+            <p class="description">Harnessing AI to fuel creativity, innovation, and transformation</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="icon-box">
+            <div class="icon"><i class="ri-code-s-slash-line"></i></div>
+            <h4 class="title"><a href="">Software Development</a></h4>
+            <p class="description">Building bespoke software solutions that drive success</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="500">
+          <div class="icon-box">
+            <div class="icon"><i class="ri-earth-line"></i></div>
+            <h4 class="title"><a href="">Sustainability</a></h4>
+            <p class="description">Committing to sustainable technology for a better world</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>About Us</h2>
+            <p>At PromptTo, our mission is to redefine the landscape of technological innovation through comprehensive training and services in AI, Robotics, and Software Development. We empower individuals and organizations to thrive in the dynamic realm of cutting-edge technology, fostering impactful solutions and unlocking unparalleled potential.</p>
+          </div>
+  
+          <div class="row content">
+            <div class="col-lg-6">
+              <p>
+                Vision Statement: To accelerate technological advancements and inspire a global community to embrace innovation responsibly.
+              </p>
+              <ul>
+                <li><i class="ri-check-double-line"></i> Collaborative synergy</li>
+                <li><i class="ri-check-double-line"></i> Innovation at the forefront</li>
+                <li><i class="ri-check-double-line"></i> Sustainability stewardship</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <p>
+                Leveraging a multidisciplinary approach, we aim to bridge the gap between technology and daily life, ensuring a future where technology enhances human experiences without compromising our ethical standards or the environment.
+              </p>
+              <a href="#" class="btn-learn-more">Learn More</a>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+<section id="counts" class="counts section-bg">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="count-box">
+          <i class="bi bi-emoji-smile"></i>
+          <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Happy Clients</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+        <div class="count-box">
+          <i class="bi bi-journal-richtext"></i>
+          <span data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Successful Projects</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+        <div class="count-box">
+          <i class="bi bi-headset"></i>
+          <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Years of Combined Experience</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+        <div class="count-box">
+          <i class="bi bi-award"></i>
+          <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Awards Won</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Counts Section -->
+
+
+    <!-- ======= About Video Section ======= -->
+<section id="about-video" class="about-video">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="row">
+  
+        <div class="col-lg-6 video-box align-self-baseline position-relative" data-aos="fade-right" data-aos-delay="100">
+          <img src="{% static 'assets/img/about-video.jpg' %}" class="img-fluid" alt="">
+          <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+        </div>
+  
+        <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+          <h3>Innovating for Tomorrow's World</h3>
+          <p class="fst-italic">
+            At PromptTo, we're not just developing technology; we're shaping the future. Our commitment to innovation drives us to explore the boundaries of AI, Robotics, and Software Development.
+          </p>
+          <ul>
+            <li><i class="bx bx-check-double"></i> Pioneering advancements in artificial intelligence to solve complex problems.</li>
+            <li><i class="bx bx-check-double"></i> Developing robotic systems that enhance human capabilities and efficiency.</li>
+            <li><i class="bx bx-check-double"></i> Crafting custom software solutions that power businesses and communities.</li>
+            <li><i class="bx bx-check-double"></i> Championing sustainable technologies that protect and preserve our planet.</li>
+          </ul>
+          <p>
+            Every project at PromptTo is a step towards a smarter, safer, and more sustainable world. Join us on our journey to redefine the future of technology.
+          </p>
+        </div>
+  
+      </div>
+  
+    </div>
+  </section><!-- End About Video Section -->
+  
+
+   <!-- ======= Clients Section ======= -->
+<section id="clients" class="clients section-bg">
+    <div class="container">
+  
+      <div class="section-title">
+        <h2>Our Trusted Partners</h2>
+        <p>At PromptTo, we pride ourselves on building strong, lasting relationships with our partners. Together, we drive innovation and excellence in technology. Here are some of the esteemed organizations we've had the pleasure to work with:</p>
+      </div>
+  
+      <div class="row">
+  
+        <!-- Each img tag's src attribute needs to point to the logos of your actual clients/partners -->
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+          <img src="{% static 'assets/img/clients/client-1.png' %}" class="img-fluid" alt="Client 1 Logo">
+        </div>
+  
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+          <img src="{% static 'assets/img/clients/client-2.png' %}" class="img-fluid" alt="Client 2 Logo">
+        </div>
+  
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+          <img src="{% static 'assets/img/clients/client-3.png' %}" class="img-fluid" alt="Client 3 Logo">
+        </div>
+  
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+          <img src="{% static 'assets/img/clients/client-4.png' %}" class="img-fluid" alt="Client 4 Logo">
+        </div>
+  
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+          <img src="{% static 'assets/img/clients/client-5.png' %}" class="img-fluid" alt="Client 5 Logo">
+        </div>
+  
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+          <img src="{% static 'assets/img/clients/client-6.png' %}" class="img-fluid" alt="Client 6 Logo">
+        </div>
+  
+      </div>
+  
+    </div>
+  </section><!-- End Clients Section -->
+  
+
+   <!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-title">
+        <h2>Client Testimonials</h2>
+        <p>At PromptTo, we're proud to share the experiences and successes of our valued clients. Here's what they have to say about our collaborative projects in AI, Robotics, and Software Development.</p>
+      </div>
+  
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+  
+          <!-- Testimonial 1 -->
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                "PromptTo's AI solutions have propelled our data processing capabilities to new heights, enabling us to unlock insights that were previously out of reach. Their commitment to excellence is unmatched."
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'assets/img/testimonials/testimonial-1.jpg' %}" class="testimonial-img" alt="">
+              <h3>Emma Watson</h3>
+              <h4>CTO, TechInnovate</h4>
+            </div>
+          </div>
+  
+          <!-- Testimonial 2 -->
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                "Working with PromptTo on robotic automation has significantly improved our manufacturing efficiency and productivity. Their team's expertise and innovative approach have been key to our project's success."
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'assets/img/testimonials/testimonial-2.jpg' %}" class="testimonial-img" alt="">
+              <h3>John Doe</h3>
+              <h4>Operations Manager, ManuFact</h4>
+            </div>
+          </div>
+  
+          <!-- Testimonial 3 -->
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                "The custom software developed by PromptTo has been a game-changer for our business operations. Their ability to understand our needs and deliver beyond expectations is truly remarkable."
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'assets/img/testimonials/testimonial-3.jpg' %}" class="testimonial-img" alt="">
+              <h3>Ava Smith</h3>
+              <h4>CEO, StartUp Co.</h4>
+            </div>
+          </div>
+  
+          <!-- Additional testimonials can be added here -->
+  
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+    </div>
+  </section><!-- End Testimonials Section -->
+  
+<!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-title">
+        <h2>Testimonials</h2>
+        <p>Discover how our cutting-edge solutions in AI, Robotics, and Software Development have empowered our clients to achieve new heights of innovation and efficiency.</p>
+      </div>
+  
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+  
+          <!-- Sample Testimonial 1 -->
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                "PromptTo's AI solutions have transformed our data analysis process, enabling us to derive meaningful insights faster and with greater accuracy than ever before."
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'assets/img/testimonials/testimonial-1.jpg' %}" class="testimonial-img" alt="">
+              <h3>Alex Smith</h3>
+              <h4>Data Scientist</h4>
+            </div>
+          </div>
+  
+          <!-- Sample Testimonial 2 -->
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                "The robotics automation system developed by PromptTo has not only increased our production efficiency but also significantly reduced human error."
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'assets/img/testimonials/testimonial-2.jpg' %}" class="testimonial-img" alt="">
+              <h3>Sarah Johnson</h3>
+              <h4>Operations Manager</h4>
+            </div>
+          </div>
+  
+          <!-- Sample Testimonial 3 -->
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                "Our collaboration with PromptTo for custom software development has been a game-changer. Their team's expertise and commitment to excellence have been evident throughout the project."
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'assets/img/testimonials/testimonial-3.jpg' %}" class="testimonial-img" alt="">
+              <h3>Michael Brown</h3>
+              <h4>CTO</h4>
+            </div>
+          </div>
+  
+          <!-- Add more testimonials as needed -->
+  
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+    </div>
+  </section><!-- End Testimonials Section -->
+  
+<!-- ======= Services Section ======= -->
+<section id="services" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>At PromptTo, we leverage cutting-edge technology to offer innovative solutions in AI, Robotics, and Software Development. Explore our range of services designed to accelerate your technological transformation.</p>
+      </div>
+  
+      <div class="row">
+        <!-- AI Solutions -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box iconbox-blue">
+            <div class="icon"><i class="ri-brain-line"></i></div>
+            <h4><a href="">AI & Machine Learning</a></h4>
+            <p>Revolutionize your operations with our AI solutions that promise to deliver smart, efficient, and automated processes.</p>
+          </div>
+        </div>
+  
+        <!-- Robotics -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box iconbox-orange">
+            <div class="icon"><i class="ri-robot-line"></i></div>
+            <h4><a href="">Robotics</a></h4>
+            <p>Enhance productivity and efficiency with our robotics solutions, tailored to meet the specific needs of your industry.</p>
+          </div>
+        </div>
+  
+        <!-- Software Development -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box iconbox-pink">
+            <div class="icon"><i class="ri-code-line"></i></div>
+            <h4><a href="">Software Development</a></h4>
+            <p>Custom software solutions designed to help your business innovate and grow in a digital-first world.</p>
+          </div>
+        </div>
+  
+        <!-- Additional Services Here -->
+  
+      </div>
+  
+    </div>
+  </section><!-- End Services Section -->
+  
+
+   <!-- ======= Cta Section ======= -->
+<section id="cta" class="cta">
+    <div class="container" data-aos="zoom-in">
+      <div class="text-center">
+        <h3>Join Us in Shaping the Future</h3>
+        <p>At PromptTo, we're not just developing technology; we're building a better tomorrow. Dive into the world of AI, Robotics, and Software Development with us and see how innovation can transform your business and the world around us. Let's create something amazing together.</p>
+        <a class="cta-btn" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+  </section><!-- End Cta Section -->
+  
+
+    <!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-title">
+        <h2>Our Work</h2>
+        <p>Discover how our innovative solutions in AI, Robotics, and Software Development are transforming industries and driving forward the future of technology.</p>
+      </div>
+  
+      <div class="row" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-ai">AI</li>
+            <li data-filter=".filter-robotics">Robotics</li>
+            <li data-filter=".filter-software">Software</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
+  
+        <!-- Sample Portfolio Item for AI -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
+          <div class="portfolio-wrap">
+            <img src="{% static 'assets/img/portfolio/ai-project-1.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>AI Project 1</h4>
+              <p>Artificial Intelligence</p>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/ai-project-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="AI Project 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Add more portfolio items for Robotics and Software categories as needed -->
+  
+      </div>
+  
+    </div>
+  </section><!-- End Portfolio Section -->
+  
+
+    <!-- ======= Team Section ======= -->
+<section id="team" class="team section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Our Innovators</h2>
+      <p>Meet the visionaries behind PromptTo, a group of passionate leaders driving the future of AI, Robotics, and Software Development. Each member brings a unique blend of expertise, creativity, and a commitment to innovation.</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <div class="member">
+          <div class="member-img">
+            <img src="{% static 'assets/img/team/babatunde.jpeg' %}" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Abdulrahman Babatunde</h4>
+            <span>Chief Executive Officer</span>
+            <p>Guiding PromptTo towards global innovation with strategic vision and leadership.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+        <div class="member">
+          <div class="member-img">
+            <img src="{% static 'assets/img/team/auwal.jpeg' %}" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Auwal Yunusa</h4>
+            <span>Product Manager</span>
+            <p>At the helm of product innovation, turning groundbreaking ideas into reality.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+        <div class="member">
+          <div class="member-img">
+            <img src="{% static 'assets/img/team/yusuf.jpeg' %}" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Yusuf Muhammad</h4>
+            <span>Chief Technology Officer</span>
+            <p>Driving technological strategy and innovation, ensuring our solutions are cutting-edge.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+        <div class="member">
+          <div class="member-img">
+            <img src="{% static 'assets/img/team/team-4.jpg' %}" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Amanda Jepson</h4>
+            <span>Financial Strategist</span>
+            <p>Ensuring our growth is sustainable, supporting innovation through strategic financial planning.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Team Section -->
+
+
+   <!-- ======= Pricing Section ======= -->
+<section id="pricing" class="pricing">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-title">
+        <h2>Pricing</h2>
+        <p>At PromptTo, we offer competitive pricing plans tailored to your needs, whether you're looking for cutting-edge software solutions or innovative robotic services. Discover the perfect plan for your business and embark on a journey towards technological transformation.</p>
+      </div>
+  
+      <div class="row">
+  
+        <div class="col-lg-4 col-md-6" data-aos="zoom-im" data-aos-delay="100">
+          <div class="box">
+            <h3>Starter Pack</h3>
+            <h4><sup>$</sup>199<span> / project</span></h4>
+            <ul>
+              <li>Custom Software Solutions</li>
+              <li>Basic Robotic Integration</li>
+              <li>Standard Support</li>
+              <li>1 Revision</li>
+              <li>Basic Analytics</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Get Started</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="100">
+          <div class="box featured">
+            <h3>Business Growth</h3>
+            <h4><sup>$</sup>499<span> / project</span></h4>
+            <ul>
+              <li>Advanced Software Development</li>
+              <li>Intermediate Robotic Systems</li>
+              <li>Priority Support</li>
+              <li>3 Revisions</li>
+              <li>Enhanced Analytics</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Get Started</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
+          <div class="box">
+            <h3>Enterprise Solution</h3>
+            <h4><sup>$</sup>Custom<span> / tailored</span></h4>
+            <ul>
+              <li>Customized Software & Robotic Solutions</li>
+              <li>Full System Integration</li>
+              <li>Dedicated Support Team</li>
+              <li>Unlimited Revisions</li>
+              <li>Advanced Analytics & Reporting</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Contact Us</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  </section><!-- End Pricing Section -->
+  
+
+   <!-- ======= Frequently Asked Questions Section ======= -->
+<section id="faq" class="faq section-bg">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+        <p>Discover answers to common questions about our software services and robotics solutions. Learn how we can help you navigate the complexities of technological innovation and integration.</p>
+      </div>
+  
+      <div class="faq-list">
+        <ul>
+          <li data-aos="fade-up">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">What types of software services do you offer? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+              <p>
+                Our software services range from custom application development and system integration to software consulting and maintenance. We specialize in creating solutions that meet your specific business needs, leveraging the latest technologies in AI and machine learning.
+              </p>
+            </div>
+          </li>
+  
+          <li data-aos="fade-up" data-aos-delay="100">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Can your robotics solutions be customized for specific industries? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Absolutely. We design and implement robotics solutions tailored to the unique requirements of various industries, including manufacturing, healthcare, logistics, and more. Our team works closely with you to develop robotics systems that enhance efficiency, safety, and innovation.
+              </p>
+            </div>
+          </li>
+  
+          <li data-aos="fade-up" data-aos-delay="200">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">How do you ensure the security of your software solutions? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Security is a top priority in all our software development processes. We adhere to best practices in security, including regular code reviews, vulnerability assessments, and incorporating security measures from the ground up. Our goal is to deliver secure, reliable software solutions that protect your data and your business.
+              </p>
+            </div>
+          </li>
+  
+          <li data-aos="fade-up" data-aos-delay="300">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">What support and maintenance services do you offer post-deployment? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                After deployment, we offer comprehensive support and maintenance services to ensure your software and robotics systems operate smoothly. Our services include software updates, system monitoring, troubleshooting, and technical support to address any issues that may arise.
+              </p>
+            </div>
+          </li>
+  
+          <li data-aos="fade-up" data-aos-delay="400">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">How does PromptTo incorporate sustainability in technology solutions? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                At PromptTo, we are committed to sustainability and environmentally friendly practices. We strive to develop technology solutions that reduce energy consumption, minimize waste, and have a positive impact on the environment. Our team actively explores innovative ways to incorporate green technologies into our projects.
+              </p>
+            </div>
+          </li>
+  
+        </ul>
+      </div>
+  
+    </div>
+  </section><!-- End Frequently Asked Questions Section -->
+  
+
+   <!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>Get in touch with PromptTo to learn more about how our technology solutions can help you achieve your goals. Whether you're interested in our software services, robotics solutions, or have a general inquiry, we're here to assist.</p>
+      </div>
+  
+      <div>
+        <!-- Adjust the src to your company's location -->
+        <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=" frameborder="0" allowfullscreen></iframe>
+      </div>
+  
+      <div class="row mt-5">
+  
+        <div class="col-lg-4">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <!-- Update with your company's address -->
+              <p>123 PromptTo Lane, Tech Park, City, Country</p>
+            </div>
+  
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <!-- Update with your company's email -->
+              <p>contact@prompto.com</p>
+            </div>
+  
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <!-- Update with your company's phone number -->
+              <p>+123 456 7890</p>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+        <div class="col-lg-8 mt-5 mt-lg-0">
+  
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row gy-2 gx-md-3">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group col-12">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group col-12">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3 col-12">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center col-12"><button type="submit">Send Message</button></div>
+            </div>
+          </form>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  </section><!-- End Contact Section -->
+  
+  </main><!-- End #main -->
+  
+
+  <!-- ======= Footer ======= -->
+<footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+  
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>PromptTo</h3>
+            <p>
+              123 Innovation Drive <br>
+              Tech Valley, Silicon City 98765<br>
+              Country <br><br>
+              <strong>Phone:</strong> +1 234 567 8900<br>
+              <strong>Email:</strong> contact@prompto.tech<br>
+            </p>
+          </div>
+  
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Portfolio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">AI Solutions</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Robotic Automation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Software Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Tech Consulting</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter to receive the latest news and exclusive updates.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="container d-md-flex py-4">
+  
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>PromptTo</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- Adjusted to PromptTo's own production or relevant attribution -->
+          Designed by <a href="https://prompto.tech/">PromptTo Team</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js'  %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
