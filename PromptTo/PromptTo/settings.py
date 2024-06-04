@@ -36,7 +36,7 @@ else:
     DEBUG = False
 
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['promptto.up.railway.app']
 
 
 # Application definition
