@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-hf4r4urralic1ig35tmbbsfk2ghb&0c3j0i-3kvl8&5fh!hp68
 if ENVIRONMENT == 'development':
     DEBUG = True
 else:
-    DEBUG = False
+    DEBUG = True
 
 
 ALLOWED_HOSTS = ['promptto.up.railway.app']
