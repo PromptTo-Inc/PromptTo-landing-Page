@@ -36,7 +36,7 @@ else:
     DEBUG = False
 
 
-ALLOWED_HOSTS = ['promptto.up.railway.app']
+ALLOWED_HOSTS = ['promptto.up.railway.app','prompttolab.com']
 
 
 # Application definition
