@@ -36,15 +36,15 @@ else:
     DEBUG = True
 
 
-ALLOWED_HOSTS = ['promptto.up.railway.app','prompttolab.com']
+ALLOWED_HOSTS = ['promptto.up.railway.app','prompttolab.com','www.prompttolab.com']
 
 
-# Application definition
+# Application definition  
 
-INSTALLED_APPS = [
+INSTALLED_APPS = [                                  
     'django.contrib.admin',
     'django.contrib.auth',
-    'django.contrib.contenttypes',
+    'django.contrib.contenttypes', 
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
