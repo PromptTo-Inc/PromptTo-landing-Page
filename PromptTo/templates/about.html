@@ -1,34 +1,38 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About Us - PromptTo</title>
-  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
-</head>
-<body>
-  <!-- Include Header -->
-  {% include 'header.html' %}
+{% extends 'index.html' %}
 
-  <main id="main">
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-lg-6">
+{% block title %}
+About Us - PromptTo
+{% endblock %}
+
+{% block content %}
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+  
+        <div class="section-title">
             <h2>About Us</h2>
-            <p>Welcome to PromptTo, where we accelerate technological advancements and inspire global innovation.</p>
-          </div>
-          <div class="col-lg-6">
-            <img src="{% static 'assets/img/about.jpg' %}" alt="About Image" class="img-fluid">
-          </div>
+            <p>At PromptTo, our mission is to redefine the landscape of technological innovation through comprehensive training and services in AI, Robotics, and Software Development. We empower individuals and organizations to thrive in the dynamic realm of cutting-edge technology, fostering impactful solutions and unlocking unparalleled potential.</p>
         </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Include Footer -->
-  {% include 'footer.html' %}
-</body>
-</html>
+  
+        <div class="row content">
+            <div class="col-lg-6">
+                <p>
+                    Vision Statement: To accelerate technological advancements and inspire a global community to embrace innovation responsibly.
+                </p>
+                <ul>
+                    <li><i class="ri-check-double-line"></i> Collaborative synergy</li>
+                    <li><i class="ri-check-double-line"></i> Innovation at the forefront</li>
+                    <li><i class="ri-check-double-line"></i> Sustainability stewardship</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+                <p>
+                    Leveraging a multidisciplinary approach, we aim to bridge the gap between technology and daily life, ensuring a future where technology enhances human experiences without compromising our ethical standards or the environment.
+                </p>
+                <a href="#" class="btn-learn-more">Learn More</a>
+            </div>
+        </div>
+  
+    </div>
+</section><!-- End About Section -->
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'index.html' %}
+
+{% block title %}
+Our Portfolio - PromptTo
+{% endblock %}
+
+{% block content %}
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+  
+        <div class="section-title">
+            <h2>Our Work</h2>
+            <p>Discover how our innovative solutions in AI, Robotics, and Software Development are transforming industries and driving forward the future of technology.</p>
+        </div>
+  
+        <div class="row" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-ai">AI</li>
+                    <li data-filter=".filter-robotics">Robotics</li>
+                    <li data-filter=".filter-software">Software</li>
+                </ul>
+            </div>
+        </div>
+  
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
+  
+            <!-- Sample Portfolio Item for AI -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
+                <div class="portfolio-wrap">
+                    <img src="{% static 'assets/img/portfolio/ai-project-1.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>AI Project 1</h4>
+                        <p>Artificial Intelligence</p>
+                        <div class="portfolio-links">
+                            <a href="{% static 'assets/img/portfolio/ai-project-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="AI Project 1"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Add more portfolio items for Robotics and Software categories as needed -->
+  
+        </div>
+  
+    </div>
+</section><!-- End Portfolio Section -->
+{% endblock %}
